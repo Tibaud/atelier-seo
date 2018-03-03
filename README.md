@@ -24,6 +24,7 @@ Tout comme vous faites un schéma pour visualiser votre développement ou vos di
 Développez sur un heroku avant de basculer sur votre NDD. Tant que le site n'est pas terminé et officiellement lancé vous DEVEZ mettre cette balise dans le <head> (même sur heroku):
 
 <META NAME="robots" CONTENT="noindex,nofollow">
+
 Ceci peut être géré via le fichier robots.txt http://www.robotstxt.org/robotstxt.html
 
 Cette balise a pour but d'empêcher l'indexation de votre site et donc de votre fake content et de vos pages pleines de bug. Quand vous êtes OK, il suffit de la retirer.
