@@ -21,7 +21,7 @@ Tout comme vous faites un schéma pour visualiser votre développement ou vos di
 
 ## On lance le dev!
 
-Développez sur un heroku avant de basculer sur votre NDD. Tant que le site n'est pas terminé et officiellement lancé vous DEVEZ mettre cette balise dans le <head> (même sur heroku):
+Développez sur un heroku avant de basculer sur votre NDD. Tant que le site n'est pas terminé et officiellement lancé vous DEVEZ mettre cette balise dans le head (même sur heroku):
 
     <META NAME="robots" CONTENT="noindex,nofollow">
 
