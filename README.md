@@ -51,7 +51,7 @@ Données communes à chaque page et langue
 * html itemtype schema.org + lang
 * charset
 * minify css et un seul fichier
-* min js et un seul fichier si doit apparaître en header
+* min js et un seul fichier si doit apparaître dans le head
 * nettoyage des commentaires
 
 Données propres à chaque page
