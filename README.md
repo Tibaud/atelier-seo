@@ -29,6 +29,7 @@ Ceci peut être géré via le fichier robots.txt http://www.robotstxt.org/robots
 Cette balise a pour but d'empêcher l'indexation de votre site et donc de votre fake content et de vos pages pleines de bug. Quand vous êtes OK, il suffit de la retirer.
 
 * Dans votre code, utilisez autant que possible le balisage http://schema.org/ et testez si c'est OK avec https://search.google.com/structured-data/testing-tool/u/0/
+* utilisez un CDN pour toutes les ressources statiques: images, css, js https://devcenter.heroku.com/articles/fastly
 
 ## URL
 
