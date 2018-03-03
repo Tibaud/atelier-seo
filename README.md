@@ -4,13 +4,15 @@ Voici les grandes lignes des choses à prévoir avant et pendant le développeme
 
 ## Nom du projet et NDD
 
-Une fois que vous avez trouvé la thématique de votre projet, vous devez vous trouver un nom et nom de domaine (NDD) qui va bien. Deux options
+Une fois que vous avez trouvé la thématique de votre projet, vous devez vous trouver un nom et nom de domaine (NDD) qui va bien. Deux options:
 
 * nom de domaine premium
-ou
 * marque sympa
 
+* trouver des mots clés : http://adwords.google.com/keywordplanner / https://trends.google.com/trends/
+
 Ex: pour un site de concert: concert.info OU viagogo.com et PAS place-billet-concert.com qui sent le spam
+
 Ex2: si vous ne ciblez que marseille, concert-marseille.com est OK.
 
 ## Avant de commencer
@@ -22,8 +24,11 @@ Tout comme vous faites un schéma pour visualiser votre développement ou vos di
 Développez sur un heroku avant de basculer sur votre NDD. Tant que le site n'est pas terminé et officiellement lancé vous DEVEZ mettre cette balise dans le <head> (même sur heroku):
 
 <META NAME="robots" CONTENT="noindex,nofollow">
+Ceci peut être géré via le fichier robots.txt http://www.robotstxt.org/robotstxt.html
 
 Cette balise a pour but d'empêcher l'indexation de votre site et donc de votre fake content et de vos pages pleines de bug. Quand vous êtes OK, il suffit de la retirer.
+
+* Dans votre code, utilisez autant que possible le balisage http://schema.org/ et testez si c'est OK avec https://search.google.com/structured-data/testing-tool/u/0/
 
 ## URL
 
@@ -32,8 +37,8 @@ Cette balise a pour but d'empêcher l'indexation de votre site et donc de votre 
 * pages / produit : https://example.com/dossier/page.html
 * essayez de ne pas aller au delà d'un niveau de dossiers
 * URL rewriting OBLIGATOIRE :
-MAL :   https://example.com/produit?cat=2&item=123
-BIEN :  https://example.com/echarpe/echarpe-en-laine-dacquay.html
+    * MAL :   https://example.com/produit?cat=2&item=123
+    * BIEN :  https://example.com/echarpe/echarpe-en-laine-dacquay.html
 
 ## Head:
 
@@ -57,7 +62,8 @@ Données propres à chaque page
 ## Content
 
 * pas de style inline
-* un seul H1
+* un seul H1, puis des H2 si besoin, qui contiennent des H3 et PAS H1 puis des H4 ...
+* fil d'Ariane (Breadcrumbs si tu veux faire le malin) balisés http://schema.org/BreadcrumbList
 * spécification de la taille des images
 * optimisation des images (alt, taille suffisante et poids optimisé, taille spécifiée)
 * optimisation des liens (title, alt)
@@ -87,11 +93,16 @@ Idem pour les salles, les villes
 
 Cette stratégie de spin permet, outre le contenu, de créer des Title et Meta desc de qualité, ce qui est fortement apprécié des moteurs.
 
-## Outils
+## Juste avant de lancer le site
 
-* au lancement déclarez votre site sur https://www.google.com/webmasters/tools/ qui permet à Google de vous alerter en cas de pb, mais aussi d'avoir qq stats sur votre positionnement
-* après le lancementt intégrez un outil stat comme https://analytics.google.com/analytics/web/
-* améliorez la vitesse de chargement de votre site en suivant les recommandations de https://gtmetrix.com/
-* utilisez le balisage http://schema.org/
+* création d'un sitemap
+* mise en place des expires header
+* utilsez un outil comme https://www.seoptimer.com/ pour voir si vous avez loupé un truc
+* améliorez la vitesse de chargement de votre site en suivant les recommandations de https://gtmetrix.com/ et https://developers.google.com/speed/pagespeed/insights/
+
+## Juste après le lancement
+
+* déclarez votre site sur https://www.google.com/webmasters/tools/ qui permet à Google de vous alerter en cas de pb, mais aussi d'avoir qq stats sur votre positionnement, l'état de votre référencement
+* intégrez un outil stat comme https://analytics.google.com/analytics/web/
 
 Nous aborderons d'autres points et outils lors de la conf du 16, RDV sur slack #Tools-SEO-SMO, je tente des faire des maj ASAP pour la partie SMO, mais vous avez déjà de quoi vous mettre dans le bain avec ce doc.
