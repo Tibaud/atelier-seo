@@ -101,6 +101,7 @@ Cette stratégie de spin permet, outre le contenu, de créer des Title et Meta d
 * mise en place des expires header
 * utilsez un outil comme https://www.seoptimer.com/ pour voir si vous avez loupé un truc
 * améliorez la vitesse de chargement de votre site en suivant les recommandations de https://gtmetrix.com/ et https://developers.google.com/speed/pagespeed/insights/
+* mettez vous en conformité avec l'UE pour les cookies https://www.cookiechoices.org/ https://github.com/infinum/cookies_eu (à tester)
 
 ## Juste après le lancement
 
